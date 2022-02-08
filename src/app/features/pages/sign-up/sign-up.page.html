@@ -1,0 +1,98 @@
+<ion-content>
+  <div class="fullpage_column">
+    <div class="title-container">
+      <div class="title-container_text">Welcome !</div>
+      <div class="title-container_description">
+        <p>you can sign in your account from here</p>
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <div class="form-container" [formGroup]="signUpForm">
+      <div class="form-container_input-container">
+        <div class="form-container_input-container_input-half">
+          <div class="form-container_input-container_input-half-left">
+            <app-input
+              placeholder="First Name"
+              formControlName="name"
+              [isInvalid]="this.signUpForm.get('name').dirty && this.signUpForm.get('name').invalid"
+            ></app-input>
+          </div>
+
+          <div class="form-container_input-container_input-half-right">
+            <app-input
+              placeholder="Last Name"
+              formControlName="surname"
+              [isInvalid]="this.signUpForm.get('surname').dirty && this.signUpForm.get('surname').invalid"
+            ></app-input>
+          </div>
+        </div>
+        <div class="form-container_input-container_input">
+          <app-input
+            placeholder="Email"
+            formControlName="email"
+            [isInvalid]="this.signUpForm.get('email').dirty && this.signUpForm.get('email').invalid"
+          ></app-input>
+        </div>
+
+        <div class="form-container_input-container_input">
+          <app-input
+            placeholder="Password"
+            [type]="typePassword"
+            nameIcon="{{ iconPassword }}"
+            (iconClicked)="onshowPassword()"
+            formControlName="password"
+            [isInvalid]="this.signUpForm.get('password').dirty && this.signUpForm.get('password').invalid"
+          ></app-input>
+        </div>
+
+        <div class="form-container_input-container_input">
+          <app-input
+            placeholder="Confrim Password"
+            [type]="typeCheck"
+            nameIcon="{{ iconCheckedPassword }}"
+            (iconClicked)="onshowCheckPassword()"
+            formControlName="checkPassword"
+            [isInvalid]="this.signUpForm.get('checkPassword').dirty && this.signUpForm.get('checkPassword').invalid"
+          ></app-input>
+        </div>
+      </div>
+
+      <!-- BUTTON -->
+      <div class="form-container_button">
+        <app-button color="peach" [shadow]="true" (click)="onSignUp()">
+          Sign Up
+        </app-button>
+      </div>
+    </div>
+
+    <!-- TEXT BETWEEN LINE -->
+    <div class="barlabel">
+      <div class="barlabel_container left">
+        <hr class="barlabel_container_line" />
+      </div>
+      <div class="barlabel_container center">
+        <p>or sign up with</p>
+      </div>
+      <div class="barlabel_container right">
+        <hr class="barlabel_container_line" />
+      </div>
+    </div>
+
+    <!-- GOOGLE BUTTON -->
+    <div class="google-button-container">
+      <app-button color="white" (click)="onGoogleClick()" imgName="google">
+      </app-button>
+    </div>
+
+    <!-- REDIRECT BUTTON -->
+    <div class="bottom-page">
+      <div class="bottom-page_half-left"><p>already a member ?</p></div>
+      <div class="bottom-page_half-right_button">
+        <app-button color="white" [borderRadius]="10" routerLink="/login" sizeText="text-small">
+          login now 
+        </app-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

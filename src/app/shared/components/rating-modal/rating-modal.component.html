@@ -1,0 +1,26 @@
+<div class="container">
+  <p class="container_text">give your feedback</p>
+  <div class="container_emoji">
+    <div class="container_emoji_button" tabIndex="1" (click)="onSelect(StateEnum.GOOD)">
+      <img
+        class="container_emoji_button_img"
+        src="../../../../assets/icons/sad.svg"
+      />
+    </div>
+    <div class="container_emoji_button" tabIndex="2" (click)="onSelect(StateEnum.MIDDLE)">
+      <img
+        class="container_emoji_button_img"
+        src="../../../../assets/icons/middle.svg"
+      />
+    </div>
+    <div class="container_emoji_button" tabIndex="3" (click)="onSelect(StateEnum.BAD)">
+      <img
+        class="container_emoji_button_img"
+        src="../../../../assets/icons/happy.svg"
+      />
+    </div>
+  </div>
+  <div class="container_btn">
+    <app-button (click)="onConfirm()">confirm selection</app-button>
+  </div>
+</div>

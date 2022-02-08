@@ -1,0 +1,21 @@
+<ion-content>
+  <div class="container">
+    <ion-list class="list">
+      <div class="list_container">
+        <div
+          class="list_container_card"
+          *ngFor="let notification of notificationList"
+          (click)="onNotificationSelect(notification)"
+        >
+          <app-home-card
+            img="{{notification.linkNotification}}"
+            title="{{notification.title}}"
+            description="{{notification.shortDescription}}"
+            data="{{notification.date}}"
+          >
+          </app-home-card>
+        </div>
+      </div>
+    </ion-list>
+  </div>
+</ion-content>

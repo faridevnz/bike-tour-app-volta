@@ -1,0 +1,13 @@
+.loader-style{
+  background: rgba(var(--light-grey-rgba));
+  --spinner-color: var(--ion-color-primary);
+  .loading-wrapper {
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+ion-spinner {
+  width: 5em;
+  height: 5em;
+}

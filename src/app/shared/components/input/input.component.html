@@ -1,0 +1,14 @@
+<ion-input
+  placeholder="{{ placeholder }}"
+  type="{{ type }}"
+  [class.input-invalid]="isInvalid"
+  [class.input-with-icon]="nameIcon != ''"
+  [class.input]="nameIcon == ''"
+  value="{{ value }}"
+  readonly={{readOnly}} 
+  [class.input-read-only]="readOnly"
+  (input)="onInputChange(input.value)"
+  #input
+  >
+</ion-input>
+<ion-icon name="{{ nameIcon }}" slot="end" class="icon" (click)="onClicked()"></ion-icon>

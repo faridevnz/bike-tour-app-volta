@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="container_img">
+    <img [src]="img" />
+  </div>
+  <div class="container_text">
+    <div class="container_text_title">
+      <div class="container_text_title_write">
+        <p>{{ title }}</p>
+      </div>
+      <div class="container_text_title_icon" *ngIf="tagName">
+        <app-tag
+          [tagName]="tagName"
+          [icon]="tagIcon"
+          [color]="tagColor"
+        ></app-tag>
+      </div>
+    </div>
+    <div class="container_text_duration">
+      <p *ngIf="duration">{{ duration }} h</p>
+      <p *ngIf="data">{{ data }}</p>
+    </div>
+    <div class="container_text_description">{{ description }}</div>
+  </div>
+</div>

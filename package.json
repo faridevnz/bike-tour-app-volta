@@ -1,0 +1,121 @@
+{
+  "name": "mobile",
+  "version": "0.0.1",
+  "author": "Ionic Framework",
+  "homepage": "https://ionicframework.com/",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/common": "~12.1.1",
+    "@angular/core": "~12.1.1",
+    "@angular/forms": "~12.1.1",
+    "@angular/platform-browser": "~12.1.1",
+    "@angular/platform-browser-dynamic": "~12.1.1",
+    "@angular/router": "~12.1.1",
+    "@ionic-native/android-permissions": "^5.36.0",
+    "@ionic-native/barcode-scanner": "^5.36.0",
+    "@ionic-native/core": "^5.36.0",
+    "@ionic-native/diagnostic": "^5.36.0",
+    "@ionic-native/geolocation": "^5.36.0",
+    "@ionic-native/google-plus": "^5.36.0",
+    "@ionic-native/onesignal": "^5.36.0",
+    "@ionic/angular": "^5.8.5",
+    "angular-leaflet": "0.0.17",
+    "angularfire2": "^5.4.2",
+    "cordova-plugin-geolocation": "^4.1.0",
+    "firebase": "^7.24.0",
+    "leaflet": "^1.7.1",
+    "leaflet-routing-machine": "^3.2.12",
+    "rxjs": "~6.6.0",
+    "ts-md5": "^1.2.9",
+    "tslib": "^2.2.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^12.2.12",
+    "@angular-eslint/builder": "~12.0.0",
+    "@angular-eslint/eslint-plugin": "~12.0.0",
+    "@angular-eslint/eslint-plugin-template": "~12.0.0",
+    "@angular-eslint/template-parser": "~12.0.0",
+    "@angular/cli": "~12.1.1",
+    "@angular/compiler": "~12.1.1",
+    "@angular/compiler-cli": "~12.1.1",
+    "@angular/language-service": "~12.0.1",
+    "@ionic/angular-toolkit": "^4.0.0",
+    "@ionic/lab": "3.2.10",
+    "@types/jasmine": "~3.6.0",
+    "@types/jasminewd2": "~2.0.3",
+    "@typescript-eslint/eslint-plugin": "4.16.1",
+    "@typescript-eslint/parser": "4.16.1",
+    "cordova-android": "^9.1.0",
+    "cordova-ios": "^6.2.0",
+    "cordova-plugin-android-permissions": "^1.1.2",
+    "cordova-plugin-androidx-adapter": "^1.1.3",
+    "cordova-plugin-device": "^2.0.2",
+    "cordova-plugin-googleplus": "^8.5.2",
+    "cordova-plugin-ionic-keyboard": "^2.2.0",
+    "cordova-plugin-ionic-webview": "^4.2.1",
+    "cordova-plugin-qrscanner": "^3.0.1",
+    "cordova-plugin-splashscreen": "^5.0.2",
+    "cordova-plugin-statusbar": "^2.4.2",
+    "cordova-plugin-whitelist": "^1.3.3",
+    "cordova.plugins.diagnostic": "^6.1.0",
+    "eslint": "^7.6.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsdoc": "30.7.6",
+    "eslint-plugin-prefer-arrow": "1.2.2",
+    "jasmine-core": "~3.8.0",
+    "jasmine-spec-reporter": "~5.0.0",
+    "karma": "^6.3.6",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.0.3",
+    "karma-coverage-istanbul-reporter": "~3.0.2",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "^1.5.0",
+    "onesignal-cordova-plugin": "^2.10.1",
+    "phonegap-plugin-barcodescanner": "^8.1.0",
+    "protractor": "~7.0.0",
+    "ts-node": "~8.3.0",
+    "typescript": "~4.2.4"
+  },
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-ionic-webview": {
+        "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
+      },
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-googleplus": {
+        "REVERSED_CLIENT_ID": "com.googleusercontent.apps.780768746149-mrf7ebn0k0s2jmj0ceb7odbf232dt17n",
+        "WEB_APPLICATION_CLIENT_ID": "780768746149-mrf7ebn0k0s2jmj0ceb7odbf232dt17n.apps.googleusercontent.com",
+        "PLAY_SERVICES_VERSION": "15.0.1"
+      },
+      "cordova-plugin-android-permissions": {},
+      "onesignal-cordova-plugin": {},
+      "cordova-plugin-androidx-adapter": {},
+      "cordova.plugins.diagnostic": {
+        "ANDROIDX_VERSION": "1.0.0",
+        "ANDROIDX_APPCOMPAT_VERSION": "1.3.1"
+      },
+      "cordova-plugin-qrscanner": {},
+      "phonegap-plugin-barcodescanner": {
+        "ANDROID_SUPPORT_V4_VERSION": "27.+"
+      }
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  }
+}

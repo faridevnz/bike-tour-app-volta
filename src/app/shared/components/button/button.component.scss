@@ -1,0 +1,62 @@
+.button {
+  --border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  --transition: --box-shadow 100ms linear;
+  --box-shadow: none;
+  text-transform: none;
+
+  &_text {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &-peach {
+    --background: var(--ion-color-primary);
+    --background-hover: var(--ion-color-primary-shade);
+    --background-activated: var(--ion-color-primary-shade);
+  }
+
+  &-dark-grey {
+    --background: var(--ion-color-secondary);
+    --background-hover: var(--ion-color-secondary-shade);
+    --background-activated: var(--ion-color-secondary-shade);
+  }
+
+  &-white {
+    --background: var(--white);
+    --background-hover: var(--white-shade);
+    --color: var(--black);
+    --background-activated: var(--white-shade);
+  }
+
+  &-light-grey {
+    --background: var(--ion-color-tertiary);
+    --background-hover: var(--ion-color-tertiary-shade);
+    --background-activated: var(--ion-color-tertiary-shade);
+  }
+
+  &-white-grey {
+    --background: var(--white-grey);
+    --background-hover: var(--ion-color-tertiary-shade);
+    --background-activated: var(--ion-color-tertiary-shade);
+  }
+}
+
+.circle {
+  --border-radius: 50%;
+}
+
+.shadow {
+  --box-shadow: 0 0 30px 0px var(--ion-color-primary-shade);
+}
+
+.text-small {
+  color: var(--royal-blue);
+  font-size: 10px;
+}
+
+.img-big {
+  min-width: 75%;
+  min-height: 75%;
+}

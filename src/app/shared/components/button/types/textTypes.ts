@@ -1,0 +1,1 @@
+export type TextSize = ("text-small");

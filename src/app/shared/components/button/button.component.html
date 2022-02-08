@@ -1,0 +1,9 @@
+<ion-button
+  [class]="'button-' + color"
+  [style]="'--border-radius:' + borderRadius + 'px;'"
+  [class.shadow]="shadow"
+  [class.circle]="circle"
+>
+  <p class="button_text {{ sizeText }}"><ng-content></ng-content></p>
+  <img class="button_img {{ sizeImg }}" *ngIf="imgName" src="{{ imgUrl }}" />
+</ion-button>

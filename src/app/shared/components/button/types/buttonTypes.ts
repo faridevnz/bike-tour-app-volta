@@ -1,0 +1,1 @@
+export type ColorButton = ("peach" | "dark-grey" | "white" | "light-grey" | "white-grey");

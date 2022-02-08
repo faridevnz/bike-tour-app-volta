@@ -1,0 +1,16 @@
+<ion-content class="container">
+  <div class="container_list">
+    <div class="container_list_card" *ngFor="let userPath of userPathsList" (click)="onPathSelect(userPath)">
+      <app-travel-card [path]="userPath"></app-travel-card>
+    </div>
+
+    <div class="container_list_empty" *ngIf="userPathsList.length === 0">
+      <div class="container_list_empty_text">
+        <p>Ops... there are no routes here, go back to the home to discover new ones!</p>
+      </div>
+      <div class="container_list_empty_btn">
+        <app-button color="white" routerLink="">Back to Home</app-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

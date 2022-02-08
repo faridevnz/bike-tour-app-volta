@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="container_timer">
+    <ion-icon name="{{iconTimer}}"></ion-icon>
+    <p>{{ timer }}</p>
+  </div>
+  <div class="container_btn">
+    <div class="container_btn-left">
+      <app-button color="white" [borderRadius]="50" (click)="onBlock()"
+        ><ion-icon name="close-outline"></ion-icon
+      ></app-button>
+    </div>
+    <div class="container_btn-center">
+      <app-button [borderRadius]="100" (click)="onStartStop()" imgName="{{iconBtn}}">
+      </app-button>
+    </div>
+    <div class="container_btn-right">
+      <app-button color="white" [borderRadius]="50" (click)="onFinish()"
+        ><ion-icon name="square"></ion-icon
+      ></app-button>
+    </div>
+  </div>
+  <app-map [coordinates]="path.positions" [poiList]="path.poiList"></app-map>
+</div>

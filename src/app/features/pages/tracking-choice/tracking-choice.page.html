@@ -1,0 +1,30 @@
+<ion-content class="container">
+  <div class="container_icon-wrap">
+    <div class="container_icon-wrap_icon-back">
+      <img src="../../../../assets/icons/arrow.svg" routerLink="" />
+    </div>
+  </div>
+
+  <div class="container_top">
+    <p class="container_top_text">
+      we will retrieve your position from this device
+    </p>
+    <div class="container_top_btn">
+      <app-button color="white" (click)="onTrackMyDevice()">track my device</app-button>
+    </div>
+  </div>
+  <div class="container_mid">
+    <img
+      class="container_mid_separate"
+      src="../../../../assets/icons/separator.svg"
+    />
+  </div>
+  <div class="container_bot">
+    <p class="container_bot_text">
+      scan the QR Code of the bike and wi will track it
+    </p>
+    <div class="container_bot_btn">
+      <app-button color="white" imgName="qrCode" sizeImg="img-big" (click)="onScanQRCode()"></app-button>
+    </div>
+  </div>
+</ion-content>

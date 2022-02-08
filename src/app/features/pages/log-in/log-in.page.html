@@ -1,0 +1,69 @@
+<ion-content fullscreen>
+  <div class="fullpage_column">
+    <div class="title-container">
+      <div class="title-container_text">Hello Again !</div>
+      <div class="title-container_description">
+        <p>you can sign in your account from here</p>
+      </div>
+    </div>
+
+    <div class="form-container" [formGroup]="loginForm">
+      <div class="form-container_input-container">
+        <div class="form-container_input-container_input">
+          <app-input
+            placeholder="Email"
+            formControlName="email"
+            [isInvalid]="this.loginForm.get('email').dirty && this.loginForm.get('email').invalid"
+          ></app-input>
+        </div>
+        <div class="form-container_input-container_input">
+          <app-input
+            placeholder="Password"
+            [type]="typePassword"
+            nameIcon="{{ iconPassword }}"
+            (iconClicked)="onShowPassword()"
+            formControlName="password"
+            [isInvalid]="this.loginForm.get('password').dirty && this.loginForm.get('password').invalid"
+          ></app-input>
+        </div>
+        <div class="form-container_input-container_reset">
+          <p (click)="onResetPassword()">reset password</p>
+        </div>
+      </div>
+      <div class="form-container_button">
+        <app-button color="peach" [shadow]="true" (click)="onLoginClick()">
+          Sign In
+        </app-button>
+      </div>
+    </div>
+
+    <div class="barlabel">
+      <div class="barlabel_container left">
+        <hr class="barlabel_container_line" />
+      </div>
+      <div class="barlabel_container center">
+        <p>or sign up with</p>
+      </div>
+      <div class="barlabel_container rigth">
+        <hr class="barlabel_container_line" />
+      </div>
+    </div>
+
+    <div class="google-button-container">
+      <app-button
+        color="white"
+        (click)="onGoogleClick()"
+        imgName="google"
+      ></app-button>
+    </div>
+
+    <div class="bottom-page">
+      <div class="bottom-page_half-left"><p>not a member ?</p></div>
+      <div class="bottom-page_half-right_button">
+        <app-button color="white" [borderRadius]="10" routerLink="/signup" sizeText="text-small">
+          register now
+        </app-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

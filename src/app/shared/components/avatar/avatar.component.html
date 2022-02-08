@@ -1,0 +1,6 @@
+<div class="avatar">
+  <img *ngIf="img; else elseBlock" (error)="onImgError()" src={{img}} class="avatar__img">
+  <ng-template #elseBlock>
+    <p class="avatar__text">{{initials}}</p>
+  </ng-template>
+</div>

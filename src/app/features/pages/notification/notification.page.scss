@@ -1,0 +1,23 @@
+.container {
+  background: var(--light-grey);
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.list {
+  background: var(--light-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &_container {
+    height: 100%;
+    max-width: 100%;
+    margin-top: 5%;
+
+    &_card {
+      margin: 0% 4% 3%;
+    }
+  }
+}

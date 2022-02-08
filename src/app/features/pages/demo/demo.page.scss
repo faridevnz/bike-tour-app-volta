@@ -1,0 +1,16 @@
+.list {
+  background: var(--light-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+
+  &_container {
+    height: 63vh;
+    max-width: 100%;
+
+    &_card {
+      margin: 0% 4% 3%;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+<ion-content>
+  <div class="profile">
+    <div class="profile__avatar">
+      <app-avatar img="{{credentials?.photoUrl}}" initials="{{initials}}"></app-avatar>
+    </div>
+    <!-- Disabled Inputs -->
+    <div class="profile__data">
+      <div class="profile__data__inputs-half">
+        <div class="left-item">
+          <app-input placeholder="{{credentials?.name}}" type="text" [readOnly]=true></app-input>
+        </div>
+        <div class="right-item">
+          <app-input placeholder="{{credentials?.surname}}" type="text" [readOnly]=true></app-input>
+        </div>
+      </div>
+      <div class="profile__data__inputs">
+        <app-input placeholder="{{credentials?.email}}" type="text" [readOnly]=true></app-input>
+      </div>
+    </div>
+    <!-- Buttons -->
+    <div *ngIf="credentials?.authProvider == 'password' " class="profile__button pass">
+      <app-button color="white" (click)="onResetPassword()">
+        Change password
+      </app-button>
+    </div>
+    <div class="profile__button logout">
+      <app-button color="light-grey" (click)="onLogout()">
+        Logout
+      </app-button>
+    </div>
+  </div>
+
+</ion-content>

@@ -1,0 +1,15 @@
+<div class="drawer" #drawer>
+  <div class="container" (touchmove)="touchMove($event)" (touchend)="touchEnd()">
+    <div class="container_drawer-pull"></div>
+  </div>
+
+  <ion-list class="list">
+    <div class="list_container">
+      <div class="list_container_card" *ngFor="let path of pathsList" (click)="onPathSelect(path)">
+        <app-home-card img="{{path.linkRoutes}}" title="{{path.shortDescription}}" duration="{{path.duration}}"
+          description="{{path.description}}" tagName="{{path.tagName}}" tagColor="{{path.tagColor}}" tagIcon="{{path.tagIcon}}">
+        </app-home-card>
+      </div>
+    </div>
+  </ion-list>
+</div>

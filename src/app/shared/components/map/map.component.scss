@@ -1,0 +1,8 @@
+.map {
+  height: 100%;
+}
+
+// remove navigation component of default leaflet map 
+.leaflet-right:nth-child(2) {
+  display: none;
+}
